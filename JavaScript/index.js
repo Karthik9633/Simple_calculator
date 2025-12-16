@@ -1,20 +1,25 @@
 let result = document.getElementById("calc")
 let firstNumber = null
 let operator = null
+let click =false
 
 function btnClick(value) {
-    if (!isNaN(Number(value)))
+    if(click){
+        result.value=""
+        click=false
+    }
         result.value += value;
 }
 
 function btnOperator(a) {
     firstNumber = Number(result.value)
     operator = a
-    result.value =""
+    result.value = ""
 }
 
 function btnClear(value) {
     result.value = ""
+    click=false
 }
 
 function btnResult() {
@@ -32,4 +37,19 @@ function btnResult() {
     else if (operator === "/") {
         finalResult = firstNumber / secondNumber
     }
-    result.value = finalResult}
+    result.value = finalResult
+    click=true
+}
+
+function btnSquare() {
+    let Square = Number(result.value)
+    result.value = Square * Square
+    click=ture
+}
+
+function btnCube(){
+
+let cube=Number(result.value)
+result.value=cube*cube*cube
+click=true
+}

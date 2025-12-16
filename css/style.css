@@ -4,38 +4,43 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 
-body{
-    background-color: #f7faa8;
+body {
+    background: #e4dede;
 }
 
-h1{
+h1 {
     text-align: center;
     padding: 30px;
+    font-size: 44px;
 }
 
-.container{
-    width:460px;
-    height:540px;
-    background-color: rgb(77, 75, 75);
+.container {
+    width: 460px;
+    height: 600px;
+    background: #2E2E2E;
     margin: auto;
     padding: 10px;
     border-radius: 10px;
+
 }
 
-#calc{
-    width:420px;
+#calc {
+    width: 420px;
     height: 60px;
     margin-left: 10px;
     margin-top: 10px;
     font-size: 45px;
     text-align: right;
-    background-color: aquamarine;
-    border-radius: 15px;
+    background: #7FFFD4;
+    border-radius: 10px;
 }
-.btn-number,.btn-clear,.btn-operation{
+
+.btn-number,
+.btn-clear,
+.btn-operation {
     width: 92px;
     height: 70px;
     margin: 7px;
@@ -44,23 +49,53 @@ h1{
     border-radius: 15px;
     margin-top: 20px;
 }
-.btn-number{
-    background-color: black;
-}
-.btn-operation{
-    background-color: rgb(59, 53, 53);
+
+.btn-number {
+    background: #1F1F1F;
+    background: linear-gradient(135deg, #000000, #3f3e3e);
 }
 
-p{
+.btn-operation {
+    background: #3A3A3A;
+    background: linear-gradient(135deg, #272727, #6d6d6d);
+}
+
+#answer{
+    background: #4CAF50;  
+}
+
+p {
     font-weight: 800;
     color: white;
-    margin:10px;
-    
-}
-.btn-number:hover{
-    border: 2px solid red;
+    margin: 10px;
+
 }
 
-.btn-clear{
+.btn-number:hover,
+.btn-operation:hover {
+
+    border: 2px solid red;
+
+}
+
+.btn-clear:hover {
+    border: 2px solid white;
+}
+
+.btn-clear {
     background-color: red;
+    background: linear-gradient(135deg, #ff0000, #b30000);
+}
+
+.btn-square,
+.btn-cube {
+    width: 200px;
+    /* rectangle width */
+    height: 65px;
+    margin: 10px 7px;
+    font-size: 2rem;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #101010;
 }
