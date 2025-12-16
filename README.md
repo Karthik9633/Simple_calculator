@@ -1,6 +1,8 @@
 # 📱 Simple Calculator using JavaScript
 This project is a Simple Calculator Web Application built using HTML, CSS, and JavaScript as part of JavaScript Assignment 07. The application performs basic arithmetic operations and demonstrates the use of JavaScript operators, functions, and DOM manipulation.
 
+🔗 Live Demo:https://karthik9633.github.io/Simple_calculator/
+
 🎯 Project Objective
 
 The goal of this project is to design and implement a functional calculator that can handle common mathematical operations such as addition, subtraction, multiplication, and division, along with square and cube calculations.
