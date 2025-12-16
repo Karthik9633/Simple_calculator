@@ -44,7 +44,7 @@ function btnResult() {
 function btnSquare() {
     let Square = Number(result.value)
     result.value = Square * Square
-    click=ture
+    click=true
 }
 
 function btnCube(){
