@@ -1,25 +1,26 @@
 let result = document.getElementById("calc")
 let firstNumber = null
 let operator = null
-let click =false
+let click = false
 
 function btnClick(value) {
-    if(click){
-        result.value=""
-        click=false
+    if (click) {
+        result.value = ""
+        click = false
     }
-        result.value += value;
+    result.value += value;
 }
 
 function btnOperator(a) {
     firstNumber = Number(result.value)
     operator = a
     result.value = ""
+    click = false
 }
 
 function btnClear(value) {
     result.value = ""
-    click=false
+    click = false
 }
 
 function btnResult() {
@@ -38,18 +39,18 @@ function btnResult() {
         finalResult = firstNumber / secondNumber
     }
     result.value = finalResult
-    click=true
+    click = true
 }
 
 function btnSquare() {
     let Square = Number(result.value)
     result.value = Square * Square
-    click=true
+    click = true
 }
 
-function btnCube(){
+function btnCube() {
 
-let cube=Number(result.value)
-result.value=cube*cube*cube
-click=true
+    let cube = Number(result.value)
+    result.value = cube * cube * cube
+    click = true
 }
